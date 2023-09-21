@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "image": "dsaddasd",
+      "name": "dasdsadasd",
+      "description": "dasd",
+      "price": "sad",
+      "category": "",
+      "id": 1
+    },
+    {
+      "image": "Ima",
+      "name": "Test",
+      "description": "T",
+      "price": "21312",
+      "category": "",
+      "id": 2
+    }
+  ]
+}
