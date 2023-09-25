@@ -1,18 +1,101 @@
 {
   "products": [
     {
-      "image": "dsaddasd",
-      "name": "dasdsadasd",
-      "description": "dasd",
-      "price": "sad",
+      "image": "dsadasdasd",
+      "name": "sadasd",
+      "description": "sadsadas",
+      "price": "dasd",
       "category": "",
-      "id": 1
+      "id": 3
     },
     {
-      "image": "Ima",
+      "image": "sadsad",
+      "name": "dsadasd",
+      "description": "sadsad",
+      "price": "asdasdsad",
+      "category": "",
+      "id": 4
+    },
+    {
+      "image": "dsdas",
+      "name": "dasdsad",
+      "description": "sdas",
+      "price": "",
+      "category": "",
+      "id": 5
+    },
+    {
+      "image": "",
+      "name": "",
+      "description": "",
+      "price": "",
+      "category": "",
+      "id": 6
+    },
+    {
+      "image": "sdsadasd",
+      "name": "sdasdsad",
+      "description": "dsadasda",
+      "price": "dasda",
+      "category": "",
+      "id": 7
+    },
+    {
+      "image": "test",
       "name": "Test",
-      "description": "T",
-      "price": "21312",
+      "description": "test",
+      "price": "test",
+      "category": "",
+      "id": 8
+    },
+    {
+      "image": "das./,",
+      "name": "danw",
+      "description": "dsa",
+      "price": "sad",
+      "category": "",
+      "id": 9
+    },
+    {
+      "image": "sda",
+      "name": "sdas",
+      "description": "dsa",
+      "price": "sda",
+      "category": "",
+      "id": 10
+    },
+    {
+      "image": "dsa",
+      "name": "sdas",
+      "description": "sda",
+      "price": "sda",
+      "category": "",
+      "id": 11
+    }
+  ],
+  "favorites": [],
+  "baskets": [
+    {
+      "image": "sadsad",
+      "name": "dsadasd",
+      "description": "sadsad",
+      "price": "asdasdsad",
+      "category": "",
+      "id": 4
+    },
+    {
+      "image": "sdsadasd",
+      "name": "sdasdsad",
+      "description": "dsadasda",
+      "price": "dasda",
+      "category": "",
+      "id": 7
+    },
+    {
+      "image": "sdasd",
+      "name": "sadas",
+      "description": "sdasd",
+      "price": "dsada",
       "category": "",
       "id": 2
     }

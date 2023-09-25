@@ -1,0 +1,10 @@
+.custom_card {
+  border: 1px solid;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.added-to-basket {
+  background-color: green;
+  color: white;
+}

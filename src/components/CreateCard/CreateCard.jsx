@@ -40,32 +40,32 @@ const CreateCard = () => {
 
   return (
     <div className="create_card">
-      <h3>Create Card List</h3>
+      <h3>Страница добавления</h3>
       <input
         type="text"
-        placeholder="Name"
+        placeholder="Название"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <input
         type="text"
-        placeholder="Image"
+        placeholder="Изображение"
         value={image}
         onChange={(e) => setImage(e.target.value)}
       />
       <input
         type="text"
-        placeholder="Description"
+        placeholder="Описание"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
       <input
         type="text"
-        placeholder="Price"
+        placeholder="Цена"
         value={price}
         onChange={(e) => setPrice(e.target.value)}
       />
-      <button onClick={handleSubmit}>Create Card</button>
+      <button onClick={handleSubmit}>Добавить </button>
     </div>
   );
 };
