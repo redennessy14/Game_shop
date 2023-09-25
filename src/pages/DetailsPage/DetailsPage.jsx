@@ -15,7 +15,12 @@ const DetailsPage = () => {
 
   if (!products) return <h3>loading...</h3>;
   return (
-    <CustomCard product={products} isUserProducts={false} onDelete={() => {}} />
+    <CustomCard
+      product={products}
+      isUserProducts={false}
+      onDelete={() => {}}
+      className="details"
+    />
   );
 };
 

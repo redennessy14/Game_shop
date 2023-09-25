@@ -3,7 +3,13 @@ import "./CustomCard.css";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-const CustomCard = ({ product, onDelete, addBasket, removeFromBasket }) => {
+const CustomCard = ({
+  product,
+  onDelete,
+  addBasket,
+  removeFromBasket,
+  className = "",
+}) => {
   const navigate = useNavigate();
   const [isAddedToBasket, setIsAddedToBasket] = useState(false);
 
@@ -46,7 +52,7 @@ const CustomCard = ({ product, onDelete, addBasket, removeFromBasket }) => {
 
   return (
     <div
-      className={`custom_card`}
+      className={`custom_card ${className}`}
       onClick={() => navigate(`/product-detail/${product.id}`)}
     >
       <img src={product.image} alt="Product Image" />

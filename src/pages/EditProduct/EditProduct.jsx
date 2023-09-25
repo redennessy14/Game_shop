@@ -37,11 +37,11 @@ const EditProduct = () => {
       image,
       category: selectedCategory,
     };
-    // for (const key in product) {
-    //   if (!product[key].trim()) {
-    //     return toast.warn("Заполните все поля");
-    //   }
-    // }
+    for (const key in product) {
+      if (!product[key].trim()) {
+        return alert("Заполните все поля");
+      }
+    }
     await editProduct(product, id);
     setName("");
     setDescription("");

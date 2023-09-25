@@ -11,10 +11,16 @@ const ProductsContextProvider = ({ children }) => {
   const INIT_STATE = {
     products: [],
     baskets: [],
+    categories: [],
   };
 
   function reducer(state = INIT_STATE, action) {
     switch (action.type) {
+      case "GET_CATEGORIES":
+        return {
+          ...state,
+          categories: action.payload,
+        };
       case "GET_PRODUCTS":
         return {
           ...state,
@@ -30,6 +36,11 @@ const ProductsContextProvider = ({ children }) => {
         return {
           ...state,
           products: action.payload,
+        };
+      case "GET_CATEGORY":
+        return {
+          ...state,
+          category: action.payload,
         };
       default:
         return state;
@@ -111,11 +122,53 @@ const ProductsContextProvider = ({ children }) => {
       console.log(error);
     }
   };
+
+  const createCategory = async (category) => {
+    try {
+      await axios.post(`${API}/categories`, category);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const getCategories = async () => {
+    try {
+      const { data } = await axios(`${API}/categories`);
+      dispatch({
+        type: "GET_CATEGORIES",
+        payload: data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const getCategoryById = async (id) => {
+    try {
+      const { data } = await axios(`${API}/categories/${id}`);
+      dispatch({
+        type: "GET_CATEGORY",
+        payload: data,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleEditCategory = async (id, data) => {
+    await axios.patch(`${API}/categories/${id}`, data);
+  };
+
+  const deleteCategory = async (id) => {
+    try {
+      await axios.delete(`${API}/categories/${id}`);
+    } catch (error) {}
+  };
   return (
     <productsContext.Provider
       value={{
         products: state.products,
         baskets: state.baskets,
+        categories: state.categories,
         createProduct,
         getProducts,
         deleteProduct,
@@ -124,6 +177,11 @@ const ProductsContextProvider = ({ children }) => {
         removeFromBasket,
         getBasket,
         getProductById,
+        getCategories,
+        createCategory,
+        handleEditCategory,
+        deleteCategory,
+        getCategoryById,
       }}
     >
       {children}

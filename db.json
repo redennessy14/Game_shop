@@ -1,15 +1,7 @@
 {
   "products": [
     {
-      "image": "dsadasdasd",
-      "name": "sadasd",
-      "description": "sadsadas",
-      "price": "dasd",
-      "category": "",
-      "id": 3
-    },
-    {
-      "image": "sadsad",
+      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
       "name": "dsadasd",
       "description": "sadsad",
       "price": "asdasdsad",
@@ -17,7 +9,7 @@
       "id": 4
     },
     {
-      "image": "dsdas",
+      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
       "name": "dasdsad",
       "description": "sdas",
       "price": "",
@@ -25,7 +17,7 @@
       "id": 5
     },
     {
-      "image": "",
+      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
       "name": "",
       "description": "",
       "price": "",
@@ -33,7 +25,7 @@
       "id": 6
     },
     {
-      "image": "sdsadasd",
+      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
       "name": "sdasdsad",
       "description": "dsadasda",
       "price": "dasda",
@@ -41,7 +33,7 @@
       "id": 7
     },
     {
-      "image": "test",
+      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
       "name": "Test",
       "description": "test",
       "price": "test",
@@ -49,55 +41,74 @@
       "id": 8
     },
     {
-      "image": "das./,",
-      "name": "danw",
-      "description": "dsa",
-      "price": "sad",
-      "category": "",
+      "image": "dsds",
+      "name": "dsdas",
+      "description": "dasd",
+      "price": "sda",
       "id": 9
     },
     {
-      "image": "sda",
-      "name": "sdas",
-      "description": "dsa",
+      "image": "dsa",
+      "name": "sda",
+      "description": "sda",
       "price": "sda",
-      "category": "",
       "id": 10
     },
     {
-      "image": "dsa",
-      "name": "sdas",
-      "description": "sda",
+      "image": "sdadas",
+      "name": "dsadsd",
+      "description": "dsad",
       "price": "sda",
-      "category": "",
       "id": 11
     }
   ],
   "favorites": [],
-  "baskets": [
+  "categories": [
     {
-      "image": "sadsad",
-      "name": "dsadasd",
-      "description": "sadsad",
-      "price": "asdasdsad",
-      "category": "",
+      "name": "sdasdsadsdas",
+      "id": 1
+    },
+    {
+      "name": "sdaas",
+      "id": 2
+    },
+    {
+      "name": "sdaas",
+      "id": 3
+    },
+    {
+      "name": "sdaas",
       "id": 4
     },
     {
-      "image": "sdsadasd",
+      "name": "sdaas",
+      "id": 6
+    },
+    {
+      "name": "sda",
+      "id": 10
+    },
+    {
+      "name": "dsa",
+      "id": 11
+    }
+  ],
+  "baskets": [
+    {
+      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
+      "name": "dasdsad",
+      "description": "sdas",
+      "price": "",
+      "category": "",
+      "id": 5
+    },
+    {
+      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
       "name": "sdasdsad",
       "description": "dsadasda",
       "price": "dasda",
       "category": "",
       "id": 7
-    },
-    {
-      "image": "sdasd",
-      "name": "sadas",
-      "description": "sdasd",
-      "price": "dsada",
-      "category": "",
-      "id": 2
     }
   ]
 }

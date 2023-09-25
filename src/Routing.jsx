@@ -6,6 +6,7 @@ import MarketList from "./pages/MarketList/MarketList";
 import EditProduct from "./pages/EditProduct/EditProduct";
 import Basket from "./pages/Basket/Basket";
 import DetailsPage from "./pages/DetailsPage/DetailsPage";
+import CreateCategory from "./pages/CreateCategory/CreateCategory";
 
 const Routing = () => {
   return (
@@ -16,6 +17,7 @@ const Routing = () => {
       <Route path="/edit-product/:id" element={<EditProduct />} />
       <Route path="/basket" element={<Basket />} />
       <Route path="/product-detail/:id" element={<DetailsPage />} />
+      <Route path="/create-category" element={<CreateCategory />} />
     </Routes>
   );
 };
