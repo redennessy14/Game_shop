@@ -11,13 +11,14 @@ const EditProduct = () => {
   const [price, setPrice] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [image, setImage] = useState("");
-  const { products, editProduct } = useContext(productsContext);
+  const { products, editProduct, categories, getCategories, getProductById } =
+    useContext(productsContext);
   const navigate = useNavigate();
   const { id } = useParams();
-  //   useEffect(() => {
-  //     getCategories();
-  //     getProductById(id);
-  //   }, []);
+  useEffect(() => {
+    getCategories();
+    getProductById(id);
+  }, []);
 
   useEffect(() => {
     if (products) {
@@ -80,18 +81,15 @@ const EditProduct = () => {
           onChange={(e) => setPrice(e.target.value)}
         />
 
-        {/* <div
-          onChange={(e) => setSelectedCategory(e.target.value)}
-          value={selectedCategory}
-        >
-          <option>Choose category</option>
+        <select onChange={(e) => setSelectedCategory(e.target.value)}>
+          <option value="">Choose category</option>
           {categories &&
             categories.map((item) => (
               <option value={item.name} key={item.id}>
                 {item.name}
               </option>
             ))}
-        </div> */}
+        </select>
         <button onClick={handleSubmit}>Submit</button>
       </div>
     </div>

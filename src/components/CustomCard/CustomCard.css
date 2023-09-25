@@ -1,9 +1,13 @@
 .custom_card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid;
   width: 200px;
   margin: 20px auto;
 }
-
+.custom_img {
+  max-width: 100%;
+}
 .added-to-basket {
   background-color: green;
   color: white;

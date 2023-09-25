@@ -55,9 +55,9 @@ const CustomCard = ({
       className={`custom_card ${className}`}
       onClick={() => navigate(`/product-detail/${product.id}`)}
     >
-      <img src={product.image} alt="Product Image" />
+      <img src={product.image} alt="Product Image" className="custom_img" />
       <div>Name: {product.name}</div>
-      <div>Desc: {product.description}</div>
+      {/* <div>Desc: {product.description}</div> */}
       <div>Price: {product.price}</div>
       <button onClick={handleDelete}>Удалить</button>
       <button onClick={handleEdit}>Редактировать</button>

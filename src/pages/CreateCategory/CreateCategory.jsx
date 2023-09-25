@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./CreateCategory.css";
 import { productsContext } from "../../context/productContext";
+import { toast } from "react-toastify";
 
 const CreateCategory = () => {
   const [categoryName, setCategoryName] = useState("");
@@ -34,12 +35,13 @@ const CreateCategory = () => {
 
   const handleCreate = async () => {
     if (!categoryName) {
-      alert("Заполните поле!");
+      toast.warn("Заполните поле!");
       return;
     }
-
+    toast.success("Вы успешно добавили категорию !");
     await createCategory({ name: categoryName });
     await getCategories();
+    setCategoryName("");
   };
   const handelSubmit = async () => {
     await handleEditCategory(editCategory, { name: editCategoryName });

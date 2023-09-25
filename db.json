@@ -1,114 +1,108 @@
 {
   "products": [
     {
-      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
-      "name": "dsadasd",
-      "description": "sadsad",
-      "price": "asdasdsad",
-      "category": "",
+      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/social/juggernaut.jpg",
+      "name": "Dota 2",
+      "description": "Ежедневно миллионы игроков по всему миру сражаются от лица одного из более сотни героев Dota 2, и даже после тысячи часов в ней есть чему научиться. Благодаря регулярным обновлениям игра живёт своей жизнью: геймплей, возможности и герои постоянно преображаются.",
+      "price": "100 $",
+      "category": "ММО",
+      "id": 1
+    },
+    {
+      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/social/juggernaut.jpg",
+      "name": "Dota 2",
+      "description": "Ежедневно миллионы игроков по всему миру сражаются от лица одного из более сотни героев Dota 2, и даже после тысячи часов в ней есть чему научиться. Благодаря регулярным обновлениям игра живёт своей жизнью: геймплей, возможности и герои постоянно преображаются.",
+      "price": "100 $",
+      "category": "ММО",
+      "id": 2
+    },
+    {
+      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/social/juggernaut.jpg",
+      "name": "Dota 2",
+      "description": "Ежедневно миллионы игроков по всему миру сражаются от лица одного из более сотни героев Dota 2, и даже после тысячи часов в ней есть чему научиться. Благодаря регулярным обновлениям игра живёт своей жизнью: геймплей, возможности и герои постоянно преображаются.",
+      "price": "100 $",
+      "category": "ММО",
+      "id": 3
+    },
+    {
+      "image": "https://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6",
+      "name": "CS GO ",
+      "description": "Counter-Strike: Global Offensive (CS:GO) расширяет границы ураганной командной игры, представленной ещё 19 лет назад. CS:GO включает в себя новые карты, персонажей, оружие и режимы игры, а также улучшает классическую составляющую CS (de_dust2 и т. п.).",
+      "price": "234",
+      "category": "Экшен",
       "id": 4
     },
     {
-      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
-      "name": "dasdsad",
-      "description": "sdas",
-      "price": "",
-      "category": "",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header_russian.jpg?t=1693590732",
+      "name": "Ведьмак 3: Дикая Охота",
+      "description": "Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.",
+      "price": "235$",
+      "category": "Ролевая игра",
       "id": 5
     },
     {
-      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
-      "name": "",
-      "description": "",
-      "price": "",
-      "category": "",
+      "image": "data:image/jpeg;base64,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",
+      "name": "RESIDENT EVIL 4",
+      "description": "Выжить — это лишь первый шаг. Resident Evil 4, настоящий гигант индустрии, возрождается. Вас ждут обновленный игровой процесс, переработанный сюжет и крайне детализированная графика. Вновь переживите кошмар, полностью изменивший жанр ужасов.",
+      "price": "300",
+      "category": "Ролевая игра",
       "id": 6
     },
     {
-      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
-      "name": "sdasdsad",
-      "description": "dsadasda",
-      "price": "dasda",
-      "category": "",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header_russian.jpg?t=1693590732",
+      "name": "Ведьмак 3: Дикая Охота",
+      "description": "Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.",
+      "price": "235$",
+      "category": "Ролевая игра",
       "id": 7
     },
     {
-      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
-      "name": "Test",
-      "description": "test",
-      "price": "test",
-      "category": "",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header_russian.jpg?t=1693590732",
+      "name": "Ведьмак 3: Дикая Охота",
+      "description": "Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.",
+      "price": "235$",
+      "category": "Ролевая игра",
       "id": 8
     },
     {
-      "image": "dsds",
-      "name": "dsdas",
-      "description": "dasd",
-      "price": "sda",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header_russian.jpg?t=1693590732",
+      "name": "Ведьмак 3: Дикая Охота",
+      "description": "Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.",
+      "price": "235$",
+      "category": "Ролевая игра",
       "id": 9
-    },
-    {
-      "image": "dsa",
-      "name": "sda",
-      "description": "sda",
-      "price": "sda",
-      "id": 10
-    },
-    {
-      "image": "sdadas",
-      "name": "dsadsd",
-      "description": "dsad",
-      "price": "sda",
-      "id": 11
     }
   ],
   "favorites": [],
   "categories": [
     {
-      "name": "sdasdsadsdas",
+      "name": "ММО",
       "id": 1
     },
     {
-      "name": "sdaas",
+      "name": "Приключение",
       "id": 2
     },
     {
-      "name": "sdaas",
+      "name": "Ролевая игра",
       "id": 3
     },
     {
-      "name": "sdaas",
+      "name": "Симулятор",
       "id": 4
     },
     {
-      "name": "sdaas",
-      "id": 6
-    },
-    {
-      "name": "sda",
-      "id": 10
-    },
-    {
-      "name": "dsa",
-      "id": 11
-    }
-  ],
-  "baskets": [
-    {
-      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
-      "name": "dasdsad",
-      "description": "sdas",
-      "price": "",
-      "category": "",
+      "name": "Спортивная игра",
       "id": 5
     },
     {
-      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg",
-      "name": "sdasdsad",
-      "description": "dsadasda",
-      "price": "dasda",
-      "category": "",
+      "name": "Стратегия",
+      "id": 6
+    },
+    {
+      "name": "Экшен",
       "id": 7
     }
-  ]
+  ],
+  "baskets": []
 }
