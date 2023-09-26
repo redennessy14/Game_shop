@@ -53,6 +53,10 @@ const CustomCard = ({
     navigate(`/edit-product/${product.id}`);
   };
 
+  const handleOrderForm = (e) => {
+    e.stopPropagation();
+    navigate(`/order-form/${product.id}`);
+  };
   return (
     <div
       className={`card ${className_market} ${className}`}
@@ -77,8 +81,9 @@ const CustomCard = ({
             isAddedToBasket ? "added-to-basket" : ""
           }`}
         >
-          Корзина
+          Добавить в корзину
         </button>
+        <button onClick={handleOrderForm}>Купить</button>
       </div>
     </div>
   );
