@@ -4,11 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { productsContext } from "../../context/productContext";
 import "./Carousel.css";
+import { useNavigate } from "react-router-dom";
 
 const Carousel = () => {
   const { getProducts, products } = useContext(productsContext);
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     getProducts();
@@ -23,8 +25,8 @@ const Carousel = () => {
     afterChange: (current) => {
       setCurrentSlide(current);
     },
-    prevArrow: <button className="slick-arrow slick-prev">Previous</button>,
-    nextArrow: <button className="slick-arrow slick-next">Next</button>,
+    prevArrow: <button className="slick-arrow slick-prev"></button>,
+    nextArrow: <button className="slick-arrow slick-next"></button>,
   };
 
   useEffect(() => {
@@ -40,16 +42,18 @@ const Carousel = () => {
 
   return (
     <div className="carousel-container">
-      <Slider ref={sliderRef} {...settings}>
-        {products.map((product, index) => (
-          <div key={product.id} className="carousel-slide">
-            <img
-              className="carousel-image"
-              src={product.image}
-              alt={`Product ${index + 1}`}
-            />
-          </div>
-        ))}
+      <Slider className="carousel-slide" ref={sliderRef} {...settings}>
+        {products
+          ? products.map((product) => (
+              <div
+                onClick={() => navigate(`/product-detail/${product.id}`)}
+                key={product.id}
+                className_slide="carousel-slide"
+              >
+                <img className="carousel_image" src={product.image} />
+              </div>
+            ))
+          : "Empty"}
       </Slider>
     </div>
   );

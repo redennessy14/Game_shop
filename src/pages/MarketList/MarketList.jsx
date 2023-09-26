@@ -32,6 +32,7 @@ const MarketList = () => {
                 onDelete={onDelete}
                 addBasket={addBasket}
                 removeFromBasket={removeFromBasket}
+                className="custom_card "
               />
             ))
           : "Empty"}

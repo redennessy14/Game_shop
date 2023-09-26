@@ -13,5 +13,27 @@
   color: white;
 }
 .details {
-  background-color: yellowgreen;
+}
+.card_desc {
+  display: none;
+}
+.card_desc_on {
+  display: block;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.details_img {
+  max-width: 40%;
 }

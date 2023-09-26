@@ -5,7 +5,6 @@ import Carousel from "../../components/Carousel/Carousel";
 const Home = () => {
   return (
     <div>
-      Домашняя страница
       <Carousel />
     </div>
   );

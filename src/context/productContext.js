@@ -12,6 +12,7 @@ const ProductsContextProvider = ({ children }) => {
     products: [],
     baskets: [],
     categories: [],
+    users: [],
   };
 
   function reducer(state = INIT_STATE, action) {
@@ -163,6 +164,7 @@ const ProductsContextProvider = ({ children }) => {
       await axios.delete(`${API}/categories/${id}`);
     } catch (error) {}
   };
+
   return (
     <productsContext.Provider
       value={{

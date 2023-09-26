@@ -20,6 +20,8 @@ const DetailsPage = () => {
       isUserProducts={false}
       onDelete={() => {}}
       className="details"
+      className_desc="card_desc_on"
+      className__details_img="details_img"
     />
   );
 };

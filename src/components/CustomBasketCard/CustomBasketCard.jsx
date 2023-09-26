@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./CustomBasketCard.css";
 
 const CustomBasketCard = ({
   baskets,
@@ -22,7 +23,7 @@ const CustomBasketCard = ({
   return (
     <div>
       {" "}
-      <img src={baskets.image} alt="Product Image" />
+      <img className="basket_img" src={baskets.image} alt="Product Image" />
       <div>Name : {baskets.name}</div>
       <div>Desc : {baskets.description}</div>
       <div>Price : {baskets.price}</div>

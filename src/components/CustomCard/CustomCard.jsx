@@ -9,6 +9,9 @@ const CustomCard = ({
   addBasket,
   removeFromBasket,
   className = "",
+  className_market = "",
+  className_desc = "",
+  className__details_img = "",
 }) => {
   const navigate = useNavigate();
   const [isAddedToBasket, setIsAddedToBasket] = useState(false);
@@ -52,21 +55,31 @@ const CustomCard = ({
 
   return (
     <div
-      className={`custom_card ${className}`}
+      className={`card ${className_market} ${className}`}
       onClick={() => navigate(`/product-detail/${product.id}`)}
     >
-      <img src={product.image} alt="Product Image" className="custom_img" />
+      <img
+        src={product.image}
+        alt="Product Image"
+        className={`custom_img ${className__details_img}`}
+      />
       <div>Name: {product.name}</div>
-      {/* <div>Desc: {product.description}</div> */}
-      <div>Price: {product.price}</div>
-      <button onClick={handleDelete}>Удалить</button>
-      <button onClick={handleEdit}>Редактировать</button>
-      <button
-        onClick={handleToggleBasket}
-        className={`basket-button ${isAddedToBasket ? "added-to-basket" : ""}`}
-      >
-        Корзина
-      </button>
+      <div className={`card_desc ${className_desc}`}>
+        Desc: {product.description}
+      </div>
+      <div>Price: {product.price} $</div>
+      <div className="card-buttons">
+        <button onClick={handleDelete}>Удалить</button>
+        <button onClick={handleEdit}>Редактировать</button>
+        <button
+          onClick={handleToggleBasket}
+          className={`basket-button ${
+            isAddedToBasket ? "added-to-basket" : ""
+          }`}
+        >
+          Корзина
+        </button>
+      </div>
     </div>
   );
 };
