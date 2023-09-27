@@ -1,32 +1,32 @@
 {
   "products": [
     {
-      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/social/juggernaut.jpg",
+      "image": "https://images2.alphacoders.com/474/474206.jpg",
       "name": "Dota 2",
       "description": "Ежедневно миллионы игроков по всему миру сражаются от лица одного из более сотни героев Dota 2, и даже после тысячи часов в ней есть чему научиться. Благодаря регулярным обновлениям игра живёт своей жизнью: геймплей, возможности и герои постоянно преображаются.",
       "price": "100 ",
-      "category": "ММО",
+      "category": "Экшен",
       "id": 1
     },
     {
-      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/social/juggernaut.jpg",
-      "name": "Dota 2",
-      "description": "Ежедневно миллионы игроков по всему миру сражаются от лица одного из более сотни героев Dota 2, и даже после тысячи часов в ней есть чему научиться. Благодаря регулярным обновлениям игра живёт своей жизнью: геймплей, возможности и герои постоянно преображаются.",
-      "price": "100 ",
-      "category": "ММО",
+      "image": "https://images6.alphacoders.com/913/913243.jpg",
+      "name": "Spider-man",
+      "description": "Это не тот Человек-паук, которого вы встречали или видели раньше. В Marvel’s Spider-Man Remastered мы встречаем опытного Питера Паркера, который мастерски борется с организованной преступностью в Нью-Йорке. В то же время он изо всех сил пытается привести в порядок свою личную жизнь и карьеру, в то время как от него зависит судьба Нью-Йорка во вселенной Marvel.  Откройте для себя полную запутанную историю в издании «MARVEL Человек-Паук: Майлз Моралес. Расширенная версия». Этот комплект включает код ваучера** для Marvel's Spider-Man Remastered – полной версии отмеченной наградами игры, в которую включены все три главы дополнения «Marvel's Spider-Man: Город, который никогда не спит» – обновленные и улучшенные для консоли PS5. ",
+      "price": "299",
+      "category": "Приключение",
       "id": 2
     },
     {
-      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/social/juggernaut.jpg",
-      "name": "Dota 2",
-      "description": "Ежедневно миллионы игроков по всему миру сражаются от лица одного из более сотни героев Dota 2, и даже после тысячи часов в ней есть чему научиться. Благодаря регулярным обновлениям игра живёт своей жизнью: геймплей, возможности и герои постоянно преображаются.",
-      "price": "100 ",
-      "category": "ММО",
+      "image": "https://cdn.wccftech.com/wp-content/uploads/2021/06/ER_KEY-ART-scaled.jpg",
+      "name": "Elden Ring",
+      "description": "Elden Ring — компьютерная игра в жанре action/RPG с открытым миром, разработанная японской компанией FromSoftware и изданная компанией Bandai Namco Entertainment для платформ Windows, PlayStation 4, PlayStation 5, Xbox One и Xbox Series X/S.",
+      "price": "199",
+      "category": "Ролевая игра",
       "id": 3
     },
     {
-      "image": "https://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6",
-      "name": "CS GO ",
+      "image": "https://assets.mspimages.in/gear/wp-content/uploads/2023/03/CS-2.jpg",
+      "name": "CS GO 2",
       "description": "Counter-Strike: Global Offensive (CS:GO) расширяет границы ураганной командной игры, представленной ещё 19 лет назад. CS:GO включает в себя новые карты, персонажей, оружие и режимы игры, а также улучшает классическую составляющую CS (de_dust2 и т. п.).",
       "price": "234",
       "category": "Экшен",
@@ -41,7 +41,7 @@
       "id": 5
     },
     {
-      "image": "https://images5.alphacoders.com/532/thumb-1920-532361.jpg",
+      "image": "https://images.alphacoders.com/130/1308576.jpeg",
       "name": "RESIDENT EVIL 4",
       "description": "Выжить — это лишь первый шаг. Resident Evil 4, настоящий гигант индустрии, возрождается. Вас ждут обновленный игровой процесс, переработанный сюжет и крайне детализированная графика. Вновь переживите кошмар, полностью изменивший жанр ужасов.",
       "price": "300",
@@ -49,31 +49,30 @@
       "id": 6
     },
     {
-      "image": "https://i.pinimg.com/originals/01/83/e6/0183e6b27db71f427152171d8e0c9bbe.jpg",
-      "name": "Ведьмак 3: Дикая Охота",
-      "description": "Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.",
-      "price": "235",
-      "category": "Ролевая игра",
+      "image": "https://wallpapers.com/images/hd/wallpaper-red-dead-redemption-2-poster-4k-games-dzmm3qtwtr6acjgi.jpg",
+      "name": "Red Dead Redemption 2",
+      "description": "Red Dead Redemption 2 — компьютерная игра в жанрах action-adventure и шутера от третьего лица с открытым миром, разработанная Rockstar Studios и выпущенная Rockstar Games для консолей PlayStation 4 и Xbox One 26 октября 2018 года и для персональных компьютеров под управлением Windows 5 ноября 2019 года.",
+      "price": "99",
+      "category": "Приключение",
       "id": 7
     },
     {
-      "image": "https://i.pinimg.com/originals/01/83/e6/0183e6b27db71f427152171d8e0c9bbe.jpg",
-      "name": "Ведьмак 3: Дикая Охота",
-      "description": "Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.",
-      "price": "235",
-      "category": "Ролевая игра",
+      "image": "https://images2.alphacoders.com/121/1218279.jpg",
+      "name": "LEGO Star Wars: The Skywalker Saga",
+      "description": "Lego Star Wars: The Skywalker Saga — компьютерная игра в жанре action-adventure, разработанная компанией Traveller's Tales и изданная Warner Bros. Games.",
+      "price": "999",
+      "category": "Стратегия",
       "id": 8
     },
     {
-      "image": "https://i.pinimg.com/originals/01/83/e6/0183e6b27db71f427152171d8e0c9bbe.jpg",
-      "name": "Ведьмак 3: Дикая Охота",
-      "description": "Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.",
-      "price": "235",
-      "category": "Ролевая игра",
+      "image": "https://s3-eu-west-1.amazonaws.com/gb.awsbucket.1/0157556_0.jpeg",
+      "name": "NBA 2K",
+      "description": "Grab your squad and experience the past, present, and future of hoops culture in NBA 2K24. Enjoy loads of pure, authentic action and limitless personalized MyPLAYER options in MyCAREER. Collect an impressive array of legends and build your perfect lineup in MyTEAM.",
+      "price": "9.99",
+      "category": "Спортивная игра",
       "id": 9
     }
   ],
-  "users": [],
   "favorites": [],
   "categories": [
     {
@@ -105,30 +104,5 @@
       "id": 7
     }
   ],
-  "baskets": [
-    {
-      "image": "https://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6",
-      "name": "CS GO ",
-      "description": "Counter-Strike: Global Offensive (CS:GO) расширяет границы ураганной командной игры, представленной ещё 19 лет назад. CS:GO включает в себя новые карты, персонажей, оружие и режимы игры, а также улучшает классическую составляющую CS (de_dust2 и т. п.).",
-      "price": "234",
-      "category": "Экшен",
-      "id": 4
-    },
-    {
-      "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/social/juggernaut.jpg",
-      "name": "Dota 2",
-      "description": "Ежедневно миллионы игроков по всему миру сражаются от лица одного из более сотни героев Dota 2, и даже после тысячи часов в ней есть чему научиться. Благодаря регулярным обновлениям игра живёт своей жизнью: геймплей, возможности и герои постоянно преображаются.",
-      "price": "100 ",
-      "category": "ММО",
-      "id": 3
-    },
-    {
-      "image": "https://i.pinimg.com/originals/01/83/e6/0183e6b27db71f427152171d8e0c9bbe.jpg",
-      "name": "Ведьмак 3: Дикая Охота",
-      "description": "Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.",
-      "price": "235",
-      "category": "Ролевая игра",
-      "id": 8
-    }
-  ]
+  "baskets": []
 }

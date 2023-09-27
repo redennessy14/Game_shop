@@ -5,3 +5,36 @@
   color: white;
   padding: 25px;
 }
+.btn {
+  display: none;
+}
+
+.profile-button {
+  position: relative;
+  cursor: pointer;
+}
+
+.subcategories {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1000;
+  width: 150px;
+}
+
+.subcategories li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.subcategories li:last-child {
+  border-bottom: none;
+}
+
+.subcategories li:hover {
+  background-color: #f0f0f0;
+}

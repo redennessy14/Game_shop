@@ -7,16 +7,15 @@ import CustomCard from "../../components/CustomCard/CustomCard";
 
 const DetailsPage = () => {
   const params = useParams("");
-  const { getProductById, products } = useProduct();
+  const { getProductById, product } = useProduct();
 
   useEffect(() => {
     getProductById(params.id);
   }, []);
 
-  if (!products) return <h3>loading...</h3>;
   return (
     <CustomCard
-      product={products}
+      product={product}
       isUserProducts={false}
       onDelete={() => {}}
       className="details"

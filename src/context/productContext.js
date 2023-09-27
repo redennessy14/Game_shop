@@ -13,6 +13,7 @@ const ProductsContextProvider = ({ children }) => {
     baskets: [],
     categories: [],
     users: [],
+    product: {},
   };
 
   function reducer(state = INIT_STATE, action) {
@@ -36,7 +37,7 @@ const ProductsContextProvider = ({ children }) => {
       case "GET_PRODUCT":
         return {
           ...state,
-          products: action.payload,
+          product: action.payload,
         };
       case "GET_CATEGORY":
         return {
@@ -169,6 +170,7 @@ const ProductsContextProvider = ({ children }) => {
     <productsContext.Provider
       value={{
         products: state.products,
+        product: state.product,
         baskets: state.baskets,
         categories: state.categories,
         createProduct,

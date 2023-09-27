@@ -10,6 +10,9 @@ import CreateCategory from "./pages/CreateCategory/CreateCategory";
 
 import OrderForm from "./pages/OrderForm/OrderForm";
 
+import Register from "./pages/Register/Register";
+import Login from "./pages/Login/Login";
+
 const Routing = () => {
   return (
     <Routes>
@@ -21,6 +24,8 @@ const Routing = () => {
       <Route path="/product-detail/:id" element={<DetailsPage />} />
       <Route path="/create-category" element={<CreateCategory />} />
       <Route path="/order-form/:id" element={<OrderForm />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/login" element={<Login />} />
     </Routes>
   );
 };
