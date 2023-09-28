@@ -5,7 +5,7 @@
   margin-top: 20px;
 }
 
-.pagination_button {
+.pagination button {
   margin: 0 5px;
   padding: 5px 10px;
   border: 1px solid #ccc;
@@ -14,12 +14,12 @@
   outline: none;
 }
 
-.pagination_button.active {
-  background-color: #007bff;
+.pagination button.active {
+  background-color: #6a0e75;
   color: #fff;
-  border: 1px solid #007bff;
+  border: 1px solid #6a0e75;
 }
 
-.pagination_button:disabled {
+.pagination button:disabled {
   cursor: not-allowed;
 }

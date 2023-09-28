@@ -21,11 +21,11 @@ const CustomBasketCard = ({
   };
 
   return (
-    <div>
+    <div className="basker_card">
       {" "}
       <img className="basket_img" src={baskets.image} alt="Product Image" />
       <div>Name : {baskets.name}</div>
-      <div>Desc : {baskets.description}</div>
+      <div> Desc : {baskets.description}</div>
       <div>Price : {baskets.price}</div>
       <button onClick={handleRemoveFromBasket}>Удалить из корзины</button>
     </div>

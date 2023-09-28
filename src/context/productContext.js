@@ -75,7 +75,7 @@ const ProductsContextProvider = ({ children }) => {
 
       dispatch({
         type: "GET_PRODUCTS",
-        payload: { data: res.data },
+        payload: { data: res.data, total: res.headers["x-total-count"] },
       });
     } catch (error) {
       console.log(error);

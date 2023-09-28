@@ -1,0 +1,19 @@
+.home_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home_img {
+  width: 100px; /* Установите нужную ширину */
+  height: auto;
+  margin-right: 10px; /* Расстояние между изображениями */
+}
+
+.home_img:last-child {
+  margin-right: 0; /* Убираем отступ у последнего изображения */
+}
+
+.home_block p {
+  margin: 0; /* Убираем отступы для параграфов */
+}

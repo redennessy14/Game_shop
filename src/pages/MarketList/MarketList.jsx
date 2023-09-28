@@ -22,6 +22,14 @@ const MarketList = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
 
+  const [searchQuery, setSearchQuery] = useState("");
+  const filteredProducts = products.filter((product) => {
+    const productName = product.name.toLowerCase();
+    return productName.includes(searchQuery.toLowerCase());
+  });
+  const handleSearchInputChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
   useEffect(() => {
     getProducts(searchParams.get("_page") || 1);
   }, [searchParams]);
@@ -37,23 +45,29 @@ const MarketList = () => {
       <div className="filter">
         <FilterComponent />
       </div>
+      <div>
+        {" "}
+        <input
+          className="search_input"
+          type="text"
+          placeholder="Поиск продуктов..."
+          value={searchQuery}
+          onChange={handleSearchInputChange}
+        />
+      </div>
 
       <div className="market_item">
-        {Array.isArray(products) && products.length > 0 ? (
-          products
-            .filter((product) =>
-              selectedCategory ? product.category === selectedCategory : true
-            )
-            .map((item) => (
-              <CustomCard
-                product={item}
-                key={item.id}
-                onDelete={onDelete}
-                addBasket={addBasket}
-                removeFromBasket={removeFromBasket}
-                className="custom_card"
-              />
-            ))
+        {Array.isArray(filteredProducts) && filteredProducts.length > 0 ? (
+          filteredProducts.map((item) => (
+            <CustomCard
+              product={item}
+              key={item.id}
+              onDelete={onDelete}
+              addBasket={addBasket}
+              removeFromBasket={removeFromBasket}
+              className="custom_card"
+            />
+          ))
         ) : (
           <p>Нет продуктов для отображения.</p>
         )}

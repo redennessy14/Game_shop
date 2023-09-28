@@ -1,5 +1,5 @@
 .carousel-container {
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -33,4 +33,10 @@
 
 .slick-next {
   right: 10px;
+}
+.carousel-slide2 {
+  width: 40%;
+}
+.carousel-slide2-img1 {
+  width: 20%;
 }

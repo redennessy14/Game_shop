@@ -3,7 +3,7 @@ import { productsContext } from "../../context/productContext";
 import { useParams } from "react-router-dom";
 
 const OrderForm = ({ onOrder, productId }) => {
-  const { products, getProducts, getProductById } = useContext(productsContext);
+  const { product, getProducts, getProductById } = useContext(productsContext);
   const [orderData, setOrderData] = useState({
     name: "",
     email: "",
@@ -38,9 +38,7 @@ const OrderForm = ({ onOrder, productId }) => {
   return (
     <div className="order-form">
       <h2>Форма заказа</h2>
-      <div>
-        Цена товара: {id == products.id ? products.price : "Неизвестно"}
-      </div>
+      <div>Цена товара: {id == product.id ? product.price : "Неизвестно"}</div>
 
       <button onClick={handleOrder}>Оформить заказ</button>
     </div>

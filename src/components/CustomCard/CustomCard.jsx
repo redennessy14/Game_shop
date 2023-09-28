@@ -28,6 +28,7 @@ const CustomCard = ({
   const [isLiked, setIsLiked] = useState(
     localStorage.getItem(`liked-${product.id}`) === "true"
   );
+  const isAdmin = "islam@new.com";
 
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
@@ -179,8 +180,16 @@ const CustomCard = ({
       </div>
 
       <div className="card-buttons">
-        <button onClick={handleDelete}>Удалить</button>
-        <button onClick={handleEdit}>Редактировать</button>
+        {isAdmin === currentUser && (
+          <button className="btn_delete" onClick={handleDelete}>
+            Удалить
+          </button>
+        )}
+        {isAdmin === currentUser && (
+          <button className="btn_edit" onClick={handleEdit}>
+            Редактировать
+          </button>
+        )}
         <button
           onClick={handleToggleBasket}
           className={`basket-button ${
@@ -189,7 +198,9 @@ const CustomCard = ({
         >
           Добавить в корзину
         </button>
-        <button onClick={handleOrderForm}>Купить</button>
+        <button className="btn_buy" onClick={handleOrderForm}>
+          Купить
+        </button>
       </div>
     </div>
   );

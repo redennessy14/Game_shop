@@ -31,9 +31,15 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <Link to="/">Домашняя страница </Link>
-      <Link to="/market-list">Магазин</Link>
-      <Link to="/basket">Корзина</Link>{" "}
+      <Link className="link-style" to="/">
+        Домашняя страница{" "}
+      </Link>
+      <Link className="link-style" to="/market-list">
+        Магазин
+      </Link>
+      <Link className="link-style" to="/basket">
+        Корзина
+      </Link>{" "}
       <div>
         <button
           className={currentUser ? "btn" : null}
@@ -48,23 +54,26 @@ const Navbar = () => {
           Регистрация
         </button>
         {currentUser ? (
-          <Link className="profile-button" onClick={toggleProfile}>
+          <Link className="profile-button link-style" onClick={toggleProfile}>
             Мой профиль{" "}
             {isProfileOpen ? (
               <ul className="subcategories">
                 {isAdmin === currentUser && (
-                  <Link to="/create-category">
+                  <Link className="link-style-category" to="/create-category">
                     <div>Создать категорию</div>
                   </Link>
                 )}
                 {isAdmin === currentUser && (
-                  <Link to="/create-card">
+                  <Link className="link-style-category" to="/create-card">
                     <div>Создать продукт</div>
                   </Link>
                 )}
-                <div onClick={() => handleLogout(navigate)}>
+                <Link
+                  className="link-style-category"
+                  onClick={() => handleLogout(navigate)}
+                >
                   Выйти из аккаунта
-                </div>
+                </Link>
               </ul>
             ) : null}
           </Link>
