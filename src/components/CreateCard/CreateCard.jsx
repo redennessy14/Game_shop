@@ -24,14 +24,18 @@ const CreateCard = () => {
       description,
       price,
       category: selectedCategory,
+      comments: [],
+      likes: [],
     };
 
-    for (const key in product) {
-      if (!product[key].trim()) {
-        return alert("Заполните все поля");
-      }
+    // for (const key in product) {
+    //   if (!product[key].trim()) {
+    //     return alert("Заполните все поля");
+    //   }
+    // }
+    if (!image.trim() || !name.trim() || !description.trim() || !price.trim()) {
+      return alert("Заполните все поля");
     }
-
     await createProduct(product);
 
     toast.success("Вы успешно добавили продукт ");
@@ -72,7 +76,7 @@ const CreateCard = () => {
         onChange={(e) => setPrice(e.target.value)}
       />
       <select onChange={(e) => setSelectedCategory(e.target.value)}>
-        <option value="">Choose category</option>
+        <option value="">Выбрать категорию </option>
         {categories &&
           categories.map((item) => (
             <option value={item.name} key={item.id}>

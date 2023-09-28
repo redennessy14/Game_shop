@@ -34,7 +34,9 @@ const AuthContextProvider = ({ children }) => {
         toast.success("Вы успешно вошли в аккаунт");
 
         localStorage.setItem("user", JSON.stringify(foundUser));
+
         navigate("/");
+        window.location.reload();
       } else {
         toast.warn("Неправильный email или пароль");
       }
@@ -44,7 +46,6 @@ const AuthContextProvider = ({ children }) => {
     } finally {
       setLoading(false);
     }
-    window.location.reload();
   };
 
   const handleLogout = (navigate) => {

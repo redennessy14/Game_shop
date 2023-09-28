@@ -1,0 +1,18 @@
+.filter-container {
+  position: absolute;
+  padding: 20px;
+  box-shadow: 0;
+  background-color: transparent;
+}
+
+.form-label {
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}

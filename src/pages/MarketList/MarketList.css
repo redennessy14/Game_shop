@@ -3,3 +3,14 @@
   gap: 25px;
   flex-wrap: wrap;
 }
+.marker_list h3 {
+  margin: 70px auto;
+  font-size: 50px;
+}
+.marker_list {
+  display: flex;
+  flex-direction: column;
+}
+.filter {
+  margin-bottom: 100px;
+}

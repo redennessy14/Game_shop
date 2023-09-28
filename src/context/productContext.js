@@ -14,7 +14,10 @@ const ProductsContextProvider = ({ children }) => {
     categories: [],
     users: [],
     product: {},
+    pages: 0,
   };
+
+  const LIMIT = 10;
 
   function reducer(state = INIT_STATE, action) {
     switch (action.type) {
@@ -27,7 +30,7 @@ const ProductsContextProvider = ({ children }) => {
         return {
           ...state,
           products: action.payload.data,
-          // pages: Math.ceil(action.payload.total / LIMIT),
+          pages: Math.ceil(action.payload.total / LIMIT),
         };
       case "GET_BASKET":
         return {
@@ -57,16 +60,18 @@ const ProductsContextProvider = ({ children }) => {
       console.log(error);
     }
   };
-  const getProducts = async () => {
+  const getProducts = async (_page) => {
     try {
-      const res = await axios(`${API}/products`);
-      // , {
-      //   params: {
-      //     q: search,
-      //     ...(category ? { category } : null),
-      //     ...(_page && { _page }),
-      //   },
-      // });
+      const res = await axios(
+        `${API}/products?_limit=${LIMIT}&_page=${_page}`,
+        {
+          params: {
+            // q: search,
+            // ...(category ? { category } : null),
+            _page,
+          },
+        }
+      );
 
       dispatch({
         type: "GET_PRODUCTS",
@@ -166,6 +171,44 @@ const ProductsContextProvider = ({ children }) => {
     } catch (error) {}
   };
 
+  const createComment = async (comment, id) => {
+    try {
+      const { data: products } = await axios.get(`${API}/products`);
+
+      const product = products.find((product) => product.id === id);
+
+      if (product) {
+        await axios.patch(`${API}/products/comments`, comment);
+      } else {
+        console.error("Продукт с указанным ID не найден.");
+      }
+    } catch (error) {
+      console.error("Ошибка при создании комментария:", error);
+    }
+  };
+  const filterProductsByCategory = async (category, page = 1, limit = 10) => {
+    try {
+      let apiUrl = `${API}/products`;
+
+      const params = {
+        _page: page,
+        _limit: limit,
+      };
+
+      if (category !== "all") {
+        params.category = category;
+      }
+      const res = await axios.get(apiUrl, { params });
+
+      dispatch({
+        type: "GET_PRODUCTS",
+        payload: { data: res.data, total: res.headers["x-total-count"] },
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <productsContext.Provider
       value={{
@@ -173,6 +216,7 @@ const ProductsContextProvider = ({ children }) => {
         product: state.product,
         baskets: state.baskets,
         categories: state.categories,
+        pages: state.pages,
         createProduct,
         getProducts,
         deleteProduct,
@@ -186,6 +230,8 @@ const ProductsContextProvider = ({ children }) => {
         handleEditCategory,
         deleteCategory,
         getCategoryById,
+        createComment,
+        filterProductsByCategory,
       }}
     >
       {children}

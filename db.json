@@ -6,6 +6,29 @@
       "description": "Ежедневно миллионы игроков по всему миру сражаются от лица одного из более сотни героев Dota 2, и даже после тысячи часов в ней есть чему научиться. Благодаря регулярным обновлениям игра живёт своей жизнью: геймплей, возможности и герои постоянно преображаются.",
       "price": "100 ",
       "category": "Экшен",
+      "comments": [
+        {
+          "author": "islam@new.com",
+          "comment": "дота 2 <3",
+          "id": "d94009c4-466d-45aa-877f-741c4626523c"
+        },
+        {
+          "author": "islam@new.com",
+          "comment": "sdasdldka;sd",
+          "id": "1bb20460-ace7-4dcf-b37d-6e1e73254de3"
+        },
+        {
+          "author": "islam@new.com",
+          "comment": "вфыв",
+          "id": "0b5eb443-3dd5-4d94-97fb-095f781035d4"
+        },
+        {
+          "author": "islam@new.com",
+          "comment": "ывфв",
+          "id": "40725227-9a8a-4ed5-9746-59337f4cef63"
+        }
+      ],
+      "likesEmail": [],
       "id": 1
     },
     {
@@ -14,6 +37,29 @@
       "description": "Это не тот Человек-паук, которого вы встречали или видели раньше. В Marvel’s Spider-Man Remastered мы встречаем опытного Питера Паркера, который мастерски борется с организованной преступностью в Нью-Йорке. В то же время он изо всех сил пытается привести в порядок свою личную жизнь и карьеру, в то время как от него зависит судьба Нью-Йорка во вселенной Marvel.  Откройте для себя полную запутанную историю в издании «MARVEL Человек-Паук: Майлз Моралес. Расширенная версия». Этот комплект включает код ваучера** для Marvel's Spider-Man Remastered – полной версии отмеченной наградами игры, в которую включены все три главы дополнения «Marvel's Spider-Man: Город, который никогда не спит» – обновленные и улучшенные для консоли PS5. ",
       "price": "299",
       "category": "Приключение",
+      "comments": [
+        {
+          "author": "islam@new.com",
+          "comment": "sadsad",
+          "id": "54598df2-55b6-443d-b22e-324569496e97"
+        },
+        {
+          "author": "islam@new.com",
+          "comment": "выфв",
+          "id": "02a523b9-fa27-4b4a-a0b3-380bcc248804"
+        },
+        {
+          "author": "islam@new.com",
+          "comment": "ывф",
+          "id": "ecb580d2-f750-41e1-bd04-636ca8ab8432"
+        },
+        {
+          "author": "islam@new.com",
+          "comment": "норм игра ",
+          "id": "ba0e5d0a-6777-41af-8b4b-a5500e65705a"
+        }
+      ],
+      "likesEmail": [],
       "id": 2
     },
     {
@@ -22,6 +68,29 @@
       "description": "Elden Ring — компьютерная игра в жанре action/RPG с открытым миром, разработанная японской компанией FromSoftware и изданная компанией Bandai Namco Entertainment для платформ Windows, PlayStation 4, PlayStation 5, Xbox One и Xbox Series X/S.",
       "price": "199",
       "category": "Ролевая игра",
+      "comments": [
+        {
+          "author": "islam@new.com",
+          "comment": "xasadsad",
+          "id": "519f821a-a99c-4a00-833b-67ade736ec7e"
+        },
+        {
+          "author": "islam@new.com",
+          "comment": "sda",
+          "id": "e2ed4642-89c3-40cc-ae99-c479c615dc8a"
+        },
+        {
+          "author": "islam@new.com",
+          "comment": "adsd",
+          "id": "676dda7c-67af-4cdd-b725-605b0ddb1e67"
+        },
+        {
+          "author": "islam@new.com",
+          "comment": "sad",
+          "id": "c4b1d1e9-ea2e-4106-a28f-3300a9063223"
+        }
+      ],
+      "likesEmail": [],
       "id": 3
     },
     {
@@ -30,6 +99,8 @@
       "description": "Counter-Strike: Global Offensive (CS:GO) расширяет границы ураганной командной игры, представленной ещё 19 лет назад. CS:GO включает в себя новые карты, персонажей, оружие и режимы игры, а также улучшает классическую составляющую CS (de_dust2 и т. п.).",
       "price": "234",
       "category": "Экшен",
+      "comments": [],
+      "likesEmail": [],
       "id": 4
     },
     {
@@ -38,6 +109,13 @@
       "description": "Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.",
       "price": "235",
       "category": "Ролевая игра",
+      "comments": [],
+      "likesEmail": [
+        {
+          "userId": "78e87433-2235-4974-9380-70b7e4cde2d5",
+          "author": "islam@new.com"
+        }
+      ],
       "id": 5
     },
     {
@@ -46,6 +124,8 @@
       "description": "Выжить — это лишь первый шаг. Resident Evil 4, настоящий гигант индустрии, возрождается. Вас ждут обновленный игровой процесс, переработанный сюжет и крайне детализированная графика. Вновь переживите кошмар, полностью изменивший жанр ужасов.",
       "price": "300",
       "category": "Приключение",
+      "comments": [],
+      "likesEmail": [],
       "id": 6
     },
     {
@@ -54,6 +134,8 @@
       "description": "Red Dead Redemption 2 — компьютерная игра в жанрах action-adventure и шутера от третьего лица с открытым миром, разработанная Rockstar Studios и выпущенная Rockstar Games для консолей PlayStation 4 и Xbox One 26 октября 2018 года и для персональных компьютеров под управлением Windows 5 ноября 2019 года.",
       "price": "99",
       "category": "Приключение",
+      "comments": [],
+      "likesEmail": [],
       "id": 7
     },
     {
@@ -62,6 +144,8 @@
       "description": "Lego Star Wars: The Skywalker Saga — компьютерная игра в жанре action-adventure, разработанная компанией Traveller's Tales и изданная Warner Bros. Games.",
       "price": "999",
       "category": "Стратегия",
+      "comments": [],
+      "likesEmail": [],
       "id": 8
     },
     {
@@ -70,10 +154,32 @@
       "description": "Grab your squad and experience the past, present, and future of hoops culture in NBA 2K24. Enjoy loads of pure, authentic action and limitless personalized MyPLAYER options in MyCAREER. Collect an impressive array of legends and build your perfect lineup in MyTEAM.",
       "price": "9.99",
       "category": "Спортивная игра",
+      "comments": [
+        {
+          "author": "islam@new.com",
+          "comment": "test",
+          "id": "f7c7bac1-f92b-4250-a033-343ff3359e81"
+        }
+      ],
+      "likesEmail": [],
       "id": 9
     }
   ],
   "favorites": [],
+  "users": [
+    {
+      "email": "islam@new.com",
+      "password": "islam1998",
+      "password_confirm": "islam1998",
+      "id": 1
+    },
+    {
+      "email": "islam",
+      "password": "islam",
+      "password_confirm": "islam",
+      "id": 2
+    }
+  ],
   "categories": [
     {
       "name": "ММО",

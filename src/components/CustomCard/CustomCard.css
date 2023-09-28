@@ -12,14 +12,21 @@
   background-color: green;
   color: white;
 }
-.details {
-}
+
 .card_desc {
   display: none;
 }
+
 .card_desc_on {
   display: block;
 }
+.like_on {
+  display: none;
+}
+.like_off {
+  display: block;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -36,4 +43,13 @@
 }
 .details_img {
   max-width: 40%;
+}
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
 }

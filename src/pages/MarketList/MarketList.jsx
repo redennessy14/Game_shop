@@ -4,6 +4,8 @@ import { productsContext } from "../../context/productContext";
 import CustomCard from "../../components/CustomCard/CustomCard";
 import { toast } from "react-toastify";
 import { useSearchParams } from "react-router-dom";
+import CustomPagination from "../../components/CustomPagination";
+import FilterComponent from "../../components/FilterComponent/FilterComponent";
 
 const MarketList = () => {
   const {
@@ -18,10 +20,11 @@ const MarketList = () => {
   } = useContext(productsContext);
 
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
-    getProducts();
-  }, []);
+    getProducts(searchParams.get("_page") || 1);
+  }, [searchParams]);
 
   const onDelete = async (id) => {
     await deleteProduct(id);
@@ -29,8 +32,11 @@ const MarketList = () => {
   };
 
   return (
-    <div>
+    <div className="marker_list">
       <h3>Магазин</h3>
+      <div className="filter">
+        <FilterComponent />
+      </div>
 
       <div className="market_item">
         {Array.isArray(products) && products.length > 0 ? (
@@ -52,6 +58,7 @@ const MarketList = () => {
           <p>Нет продуктов для отображения.</p>
         )}
       </div>
+      <CustomPagination />
     </div>
   );
 };
